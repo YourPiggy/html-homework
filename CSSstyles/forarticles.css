@@ -1,0 +1,27 @@
+.div {
+
+  margin: 30px 15px;
+  padding: 15px;
+  border: 1px solid white;
+
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  background: skyblue;
+}
+
+.body {
+  background-image: url(D:/html/Lesson1/img/trava.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.button {
+  border-radius: 20px;
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid white;
+  background: white;
+  height: 15px;
+  width: 15px;
+}

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Стили</title>
+  <link rel="stylesheet" href="../CSSstyles/stylescss.css">
+  <style>
+    h2 {
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="color: red">Встраивание</h1><!-- происходит через атрибут style-->
+  <h2>Вложение</h2><!-- происходит через тег style в теге head-->
+  <h3>Связывание</h3><!-- самое правильноеПодключение файлов со стилями с тегом link-->
+
+  <p class="center">Текст</p>
+
+<div id="container"></div>
+
+<p><em>Дочерний селектор</em></p>
+
+<p>
+  <span><!-- применение стилей к какой то части текста-->
+    <em>p > span > em</em>
+  </span>
+</p>
+
+<!--не несет нагрузки тег nav необходим для создания меню-->
+<nav>
+  <ul>
+    <li>Главная</li>
+    <li>Каталог</li>
+    <li>Конткты</li>
+  </ul>
+</nav>
+
+
+<p class="elem-class" id="elemId">Специфичность</p>
+</body>
+</html>

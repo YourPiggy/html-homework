@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Регстрация</title>
+  <link rel="shortcut icon" href="D:\html\Lesson1/img/quest_log.png"/>
+</head>
+<body>
+    <form action="#" method="post" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Зарегистрируйтесь</legend>
+        <p>
+            <label for="1k">Login:</label>
+            <input id="1k" type="Login" required placeholder="Придумайте login" minlenght="2" maxlength="6">
+        </p>
+        <p>
+          <label for="2k">@mail:</label>
+            <input id="2k" type="email" required placeholder="Введите @mail">
+        </p>
+        <p>
+          <label for="3k">Password:</label>
+            <input id="3k" type="password" required placeholder="Придумайте пароль" minlenght="2" maxlength="6">
+        </p>
+        <p>
+          <label for="4k">Confirm password</label>
+          <input id="4k" type="password" required placeholder="Повторите пароль" minlenght="2" maxlength="6">
+        </p>
+        <p>
+            <input type="submit" value="Send">
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>загрузка файлов</legend>
+        <p>
+          <label for="ik">Вставьте файл</label>
+            <input id="ik" type="file" multiple accept="image/*">
+        </p>
+      </fieldset>
+    </form>
+  </body>
+  </html>

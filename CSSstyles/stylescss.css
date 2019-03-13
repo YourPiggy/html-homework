@@ -1,0 +1,64 @@
+@import url ();
+
+h3 {
+  color: red;
+}
+/*при одинаковых селектотрах побеждает тот кто ниже, усли нету селектора !important*/
+.center {
+  text-align: right;
+  color: blue;
+}
+
+#container {
+  color: red;
+  text-align: right;
+  height: 100px;
+  width: 100px;
+  background: yellow;
+
+}
+
+/*дочерний селектор*/
+p > em {
+  font-size: 30pt;
+}
+
+/*селектор потомков*/
+
+p em {
+  color: orange;
+}
+
+p .red a {
+  text-decoration: none; /*отмена подчеркивания у ссылки*/
+  } /* <p> <span class="red"><a>text</a></span></p> сначала тег р потом какой то элемент с классом ред*/
+
+p.red a {} /*<p class="red><a>ссылка</a></p>"стили будут применяться ко всем ссылкам в которых есть тег р с классом red*/
+
+.red a {}  /*будет применяться ко всем а у которых есть класс red*/
+
+
+
+nav li {
+  list-style-type: none;
+}
+
+/*inherit наследование свойства родителя*/
+body {
+  background: skyblue;
+}
+
+#elemId {
+  background: green;
+}
+
+.elem-class {
+  background: yellow;
+}
+p {
+  background: blue;
+}
+/* id 0 1 0 0
+class 0 0 1 0
+  tag 0 0 0 1
+встроенный стиль 1 0 0 0 */  

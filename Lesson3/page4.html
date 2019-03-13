@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Заполните форму</title>
+  <link rel="shortcut icon" href="D:\html\Lesson1/img/quest_log.png"/>
+</head>
+<body>
+  <form action="#" method="post" enctype="multipart/form-data">
+  <fieldset>
+    <legend>Авторизуйтесь</legend>
+    <p>
+        <label for="1k">Login:</label>
+        <input id="1k" type="Login" name="login" required placeholder="Придумайте login" minlenght="2" maxlength="6">
+    </p>
+    <p>
+      <label for="2k">@mail:</label>
+        <input id="2k" name="mail" type="email" required placeholder="Введите @mail">
+    </p>
+    <p>
+      <label for="3k">Password:</label>
+        <input id="3k" name="password" type="password" required placeholder="Придумайте пароль" minlenght="2" maxlength="6">
+    </p>
+  </fieldset>
+  <fieldset>
+    <legend>Дайте ответ на вопросы</legend>
+    <p>
+      <label for="4k">Введите ваш возраст</label>
+      <input id="4k" type="number" required placeholder="Полных лет" minlenght="1" maxlength="99">
+    </p>
+    <p>
+        <label for="5k">Ваш город</label>
+        <input id="5k" name="city" type="text">
+    </p>
+    <p>
+        <label for="6k">Введите количество членов вашей семьи</label>
+        <select id="6k" name="select family" size="1">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 и более</option>
+        </select>
+    </p>
+    <p>
+      <label for="">Хотели бы вы сменить место жительства?</label>
+           <br><label><input name="answer" type="radio">да</label>
+          <label><input name="answer" type="radio">нет</label>
+          <label><input name="answer" type="radio">возможно</label>
+    </p>
+    <p>
+      <label>Выберите, что по вашему мнению относится к вашему городу</label>
+      <br><label><input type="checkbox">хорошая экология</label>
+      <br><label><input type="checkbox">низкий уровень преступности</label>
+      <br><label><input type="checkbox">отсутсвие безработицы</label>
+      <br><label><input type="checkbox">развитая инфраструктура</label>
+      <br><label><input type="checkbox">высокий уровень образования</label>
+      <br><label><input type="checkbox">доступность продуктов питания</label>
+    </p>
+    <p>
+      <label>Напишите какие, по вашему мнению, недостатки вашего города</label>
+      <br><textarea name="fully answer" cols="100" rows="10" required placeholder="через запятую" wrap="off"></textarea>
+    </p>
+    <p>
+       <label for="range">оцените уровень работы администрации вашего города</label>
+       <br><label>1</label>
+              <input id="range" type="range" min="1" max="10" step="1">
+           <label>10</label>
+    </p>
+    <p>
+      <strong><label>Выберите размер вашего дохода:</label></strong>
+      <br>
+      <label><input type="radio">до 15 000 рублей</label>
+      <label><input type="radio">от 15 000 до 40 000 рублей</label>
+      <label><input type="radio">от 40 000 до 70 000 рублей</label>
+      <label><input type="radio">больше 70 000 рублей</label>
+    </p>
+    <p>
+      <button value="some_value" type="submit">Отправить данные</button>
+    </p>
+  </fieldset>
+  </form>
+</body>
+</html>

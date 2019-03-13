@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Теги форм</title>
+</head>
+<body>
+  <!-- тег контейнер для полей формы-->
+  <form action="#" method="post" enctype="multipart/form-data"> <!-- enctype="multipart/form-data" атрибут для отправки файлов-->
+<!-- тег контейнер который группирует форму(рамка)-->
+    <fieldset><!-- disabled отключает элементы филсета-->
+      <legend>Текстовые поля</legend>
+      <p>
+      <!-- для создания полей форм-->
+        <!-- однострочное текстовое поле text-->
+          <input type="text" required placeholder="введите ченить">
+          <input type="text" disabled required placeholder="введите ченить">
+      </p>
+      <p>
+<!-- для введения емейл адреса пользователя-->
+          <input type="email" placeholder="введите емейл" autofocus readonly>
+      </p>
+      <p>
+<!-- для ввода пароля-->
+          <input type="password" minlenght="2" maxlength="6" pattern="[A-Za-z]">
+      </p>
+      <p>
+<!-- обычное текстовое поле с дополнительным крестиком для удаления введенной информации-->
+          <input type="search" value="">
+      </p>
+      <p>
+        <!-- для отправки данных на сервер-->
+          <input type="submit" value="start">
+      </p>
+    </fieldset>
+    <fieldset>
+      <legend>загрузка файлов</legend>
+      <p>
+        <label for="ik">Вставьте файл</label>
+          <input id="ik" type="file" multiple accept="image/*">
+      </p>
+    </fieldset>
+    <fieldset>
+      <legend>Поля для ввода чисел</legend>
+      <p>
+          <label  for="number">Ввод чисел</label>
+          <input id="number" type="number" min="1" max="10" step="2">
+      </p>
+      <p>
+         <label for="range">Ползунок</label>
+         <input id="range" type="range"
+                min="2" max="8" value="6" step="3">
+      </p>
+    </fieldset>
+    <fieldset>
+      <legend>Чекбоксы и радиокнопки</legend>
+      <p>
+          <label><input checked type="checkbox">Чекбокс</label>
+          <label><input type="checkbox">Чекбокс</label>
+          <label><input type="checkbox">Чекбокс</label>
+      </p>
+      <p>
+          <label><input checked type="radio">Радиокнопка</label>
+          <label><input type="radio">Радиокнопка</label>
+          <label><input type="radio">Радиокнопка</label>
+      </p>
+      <fieldset>
+        <label>Группы радиокнопок</label>
+        <p>
+            <label><input name="answer" type="radio">да</label>
+            <label><input name="answer" type="radio">нет</label>
+            <label><input name="answer" type="radio">возможно</label>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Группы чекбоксов (флажков)</legend>
+        <p>
+            <label><input name="answer2 []" type="checkbox">Вариант 1</label>
+            <label><input name="answer2 []" type="checkbox">Вариант 2</label>
+            <label><input name="answer2 []" type="checkbox">Вариант 3</label>
+        </p>
+      </fieldset>
+    </fieldset>
+    <fieldset>
+      <legend>Выбор даты и времени</legend><!-- Может не работать во всех браузерах-->
+      <p>
+          <label for="time">Выборт времени</label>
+          <input id="time" type="time" min="14:11">
+      </p>
+      <p>
+          <label for="date">Выбор даты</label>
+          <input id="date" type="date" min="2012-12-12">
+      </p>
+      <p>
+          <label for="datetime">Дата и время</label>
+          <input id="datetime" type="datetime-local">
+      </p>
+      <p>
+          <label for="month">Выбор месяца</label>
+          <input type="month" id="month">
+      </p>
+      <p>
+          <label for="week">Выбор недели</label>
+          <input type="week" id="week">
+      </p>
+    </fieldset>
+    <fieldset>
+      <legend>Взятие цвета/скрытое поле</legend>
+      <p>
+        <input type="color">
+      </p>
+      <p>
+        <label for="hidden">Скрытое поле</label>
+        <input type="hidden" id="hidden" value="info">
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Кнопки (тег input)</legend>
+      <p>
+          <input type="submit" value="Отправить данные формы">
+      </p>
+      <p>
+          <input type="reset" value="сброс">
+      </p>
+      <p>
+          <input type="button" value="просто кнопка">
+      </p>
+      <p>
+          <input type="image" src="D:\html\Lesson1\img\132.jpg" alt="Tst" value="Кнопка с картинкой" height="100" width="100">
+      </p>
+    </fieldset>
+    <fieldset>
+      <legend>Тоже кнопки(Тег button)</legend><!-- Тег контейнер, -->
+      <p>
+      <button value="some_value" type="submit">Отправить данные</button> <!--Используется для отправки данных на сервер-->
+      <button type="reset">Сброс</button>
+      <button type="button">Просто кнопка</button>
+    </p>
+    </fieldset>
+    <fieldset>
+      <legend>Многострочные текстовые поле</legend>
+      <p>
+        <textarea cols="20" rows="30" autofocus required placeholder="подсказка" wrap="off"></textarea> <!-- Тег контейнер, можно привязать по айди лейбл. cols отвечает за количество сттолбцов, rows оттвечает за количество рядов, доступен autofocus, required, maxlength, minlenght, placeholder, -->
+      </p>
+    </fieldset>
+    <fieldset>
+      <legend>Раскрывающиеся списки</legend>
+      <p>
+        <select name="select" size="2" ><!--отвечает за раскрывающийся список, multiple открывает все элементы списка-->
+          <option label="3" value="1">Элемент списка 1</option><!--обозначает элемент списка-->
+          <option selected value="2">Элемент списка 2</option><!--selected по умолчанию-->
+          <option value="3">Элемент списка 3</option>
+        </select>
+        <select>
+          <optgroup label="Заголовок для группы элементов 1"><!--группировка Элементов-->
+            <option value="">Элемент списка 1</option>
+            <option value="">Элемент списка 2</option>
+            <option value="">Элемент списка 3</option>
+          </optgroup>
+            <optgroup label="Заголовок для группы элементов 2">
+          <option value="">Элемент списка 4</option>
+          <option value="">Элемент списка 5</option>
+            </optgroup>
+        </select>
+      </p>
+    </fieldset>
+  </form>
+</body>
+</html>
