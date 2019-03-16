@@ -1,0 +1,44 @@
+@import url("grid.css");
+
+
+.ul li {
+  list-style-type: none;
+  display: inline-block;
+  height: 60px;
+  width: 100px;
+  background: skyblue;
+  margin: 5px;
+  padding: 10px;
+  border: 4px solid white;
+  border-radius: 30px;
+}
+
+.card {
+  height: 200px;
+  width: 300px;
+  background: skyblue;
+  margin: 10px;
+  padding: 10px;
+  border: 4px solid white;
+  border-radius: 30px;
+  float: left;
+  width: 100%;
+}
+
+.body {
+  background-image: url(D:/html/Lesson1/img/back.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.cardright {
+  position: absolute;
+  height: 440px;
+  width: 300px;
+  background: skyblue;
+  margin: 15px;
+  padding: 10px;
+  border: 4px solid white;
+  border-radius: 30px;
+  clear: both;
+}
