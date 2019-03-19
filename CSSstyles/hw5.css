@@ -1,0 +1,112 @@
+.body {
+  background-image: url(D:/html/Lesson1/img/jap.png);
+}
+.border {
+ border: 1px solid none;
+}
+.flex-row {
+  display: flex;
+}
+.logo-1 {
+  flex: 1;
+  background: white;
+  flex-grow: 0;
+}
+.flex-1 {
+  flex: 3;
+  background: white;
+  flex-grow: 10;
+  justify-content: space-around;
+  display: flex;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.justify-content {
+  justify-content: space-between;
+}
+
+.work {
+  background: skyblue;
+  border-radius: 20px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.menu li {
+  list-style-type: none;
+  display: inline-block;
+  height: 50px;
+  width: 60px;
+ background: white;
+
+  padding: 10px;
+  border: 1px solid black;
+}
+.tel {
+  flex: 1;
+  background: white;
+  flex-grow: 2;
+  align-items: flex-end;
+}
+
+.text {
+    flex: 1;
+    background: white;
+    flex-grow: 10;
+    flex-direction: column;
+}
+
+.text-2 {
+  height: 50px;
+}
+
+.menu2 {
+  margin: 5px 0;
+  background-color: skyblue;
+  border-radius: 30px;
+}
+.menu2 ul {
+			    padding:0;
+			    margin:0;
+			    list-style: none;
+			    position: relative;
+			    }
+.menu2 ul li {
+			    margin: 0px -7px 0 0;
+			    display:inline-block;
+			    background-color: skyblue;
+}
+.menu2 a {
+			    display:block;
+			    padding:0 5px;
+			    color:#FFF;
+			    font-size:20px;
+			    line-height: 60px;
+			    text-decoration:none;
+}
+a:hover {
+			    background-color: lightblue;
+		}
+.menu2 ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+}
+.menu2 ul li:hover > ul {
+			    display:inherit;
+}
+
+.menu2 ul ul li {
+			    min-width:250px;
+			    float:none;
+			    display:list-item;
+			    position: relative;
+          transition: 1s;
+}
